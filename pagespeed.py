@@ -6,8 +6,8 @@ import os.path
 # https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=http://www.performance-law.com&strategy=mobile&key=AIzaSyDJNu6pW7kifKiVssTdMlyad-hUc3stgOg
 
 api_key = "AIzaSyDJNu6pW7kifKiVssTdMlyad-hUc3stgOg"
-url = "performance-law.com"
-api_url = 'https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=http://www.' + url + '&strategy=mobile&key=' + api_key
+url = "stevecedilloslaw.scorpionwebsite.com"
+api_url = 'https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=http://' + url + '&strategy=mobile&key=' + api_key
 
 json_data = requests.get(api_url)
 
