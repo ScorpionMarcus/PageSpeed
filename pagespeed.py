@@ -6,7 +6,8 @@ import os.path
 # https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=http://www.performance-law.com&strategy=mobile&key=AIzaSyDJNu6pW7kifKiVssTdMlyad-hUc3stgOg
 
 api_key = "AIzaSyDJNu6pW7kifKiVssTdMlyad-hUc3stgOg"
-url = "stevecedilloslaw.scorpionwebsite.com"
+url = 'mdaccidentlaw-redesign.scorpionwebsite.com'
+print("Querying " + url)
 api_url = 'https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=http://' + url + '&strategy=mobile&key=' + api_key
 
 json_data = requests.get(api_url)
@@ -19,12 +20,13 @@ def download_image(pic_name, pic_url):
 	r = requests.get(pic_url, allow_redirects=True)
 
 	# Declare a save path
-	save_path = 'C:/Users/marcus.legault/Downloads/Pics'
+	save_path = 'C:/Users/marcus.legault/scripts/PageSpeed/pics'
 
 	# Join save path with file name
 	completeName = os.path.join(save_path, pic_name)
 
 	print('Saving ' + pic_name + ' -----> ' + completeName)
+	print(pic_url)
 
 	# Write the file to the completeName path
 	open(completeName, 'wb').write(r.content)
