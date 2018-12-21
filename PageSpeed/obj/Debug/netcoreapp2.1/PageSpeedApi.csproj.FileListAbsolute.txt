@@ -1,0 +1,11 @@
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.csprojAssemblyReference.cache
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.csproj.CoreCompileInputs.cache
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.AssemblyInfoInputs.cache
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.AssemblyInfo.cs
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\bin\Debug\netcoreapp2.1\PageSpeedApi.deps.json
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\bin\Debug\netcoreapp2.1\PageSpeedApi.runtimeconfig.json
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\bin\Debug\netcoreapp2.1\PageSpeedApi.runtimeconfig.dev.json
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\bin\Debug\netcoreapp2.1\PageSpeedApi.dll
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\bin\Debug\netcoreapp2.1\PageSpeedApi.pdb
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.dll
+C:\Users\marcus.legault\source\repos\PageSpeed\PageSpeed\obj\Debug\netcoreapp2.1\PageSpeedApi.pdb
