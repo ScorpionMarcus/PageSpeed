@@ -4,6 +4,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Drawing;
 
 namespace PageSpeedApi
 {
@@ -37,17 +38,22 @@ namespace PageSpeedApi
             }
 
             JObject json = JObject.Parse(content);
-
             // var json = JsonConvert.DeserializeObject<PageSpeedData>(content);
 
             var value = json["formattedResults"]["ruleResults"]["OptimizeImages"]["urlBlocks"][0]["urls"];
 
             foreach (var item in value)
             {
-                Console.WriteLine(item["result"]["args"][0]["value"]);
+                string imageUrl = item["result"]["args"][0]["value"].ToString();
+                Console.WriteLine(imageUrl);
+                //using (WebClient client = new WebClient())
+                //{
+                //    client.DownloadFile(new Uri(url), imageUrl);
+                //}
             }
 
             Console.ReadLine();
+
 
         }
     }
