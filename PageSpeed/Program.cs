@@ -3,6 +3,7 @@ using System.Web;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace PageSpeedApi
 {
@@ -12,8 +13,8 @@ namespace PageSpeedApi
         {
             PageSpeed ps = new PageSpeed();
 
-            Console.WriteLine("Enter domain: ");
-            string url = Console.ReadLine();
+            //Console.WriteLine("Enter domain: ");
+            string url = "https://www.performance-law.com";
 
             // https://www.googleapis.com/pagespeedonline/v4/runPagespeed?url=https%3a%2f%2fwww.performance-law.com&strategy=mobile&key=AIzaSyDJNu6pW7kifKiVssTdMlyad-hUc3stgOg
 
@@ -35,10 +36,17 @@ namespace PageSpeedApi
                 sr.Close();
             }
 
-            //var json = JsonConvert.DeserializeObject<PageSpeedData>(content);
+            JObject json = JObject.Parse(content);
 
-            //Console.WriteLine(content);
-            Console.WriteLine(pagespeedUrl);
+            // var json = JsonConvert.DeserializeObject<PageSpeedData>(content);
+
+            var value = json["formattedResults"]["ruleResults"]["OptimizeImages"]["urlBlocks"][0]["urls"];
+
+            foreach (var item in value)
+            {
+                Console.WriteLine(item["result"]["args"][0]["value"]);
+            }
+
             Console.ReadLine();
 
         }
